@@ -11,17 +11,13 @@
 
     <drawable name="cyht_title_bg">#ffffff</drawable>
     <color name="cyht_title_text_color">#29abe2</color>
-    <!--<color name="cyht_content_color">#2b2b2b</color>-->
     <color name="cyht_content_color">#333333</color>
-    <!--<color name="cyht_medium_gray_color">#585858</color>-->
     <color name="cyht_prompt_text_color">#949393</color>
     <color name="cyht_button_text_color">#ffffff</color>
-    <color name="cyht_line_color">#E0E0E0</color>
+    <color name="cyht_line_color">#e0e0e0</color>
     <color name="cyht_transparent_color">#00000000</color>
-    <color name="cyht_trasparent_half_color">#25000000</color><!--404040  -->
-    <!--<color name="cyht_backgroud_color">#F9F9F9</color>-->
+    <color name="cyht_trasparent_half_color">#2500000</color><!--404040  -->
     <color name="cyht_backgroud_color">#ECECEC</color>
-    <!--<color name="cyht_deep_dark_backgroud_color">#E6E6E6</color>-->
     <color name="cyht_white_item_color">#ffffff</color>
     <color name="cyht_select_item_color">#C0C0C0</color>
     <color name="font_blue_color">#0080ff</color>
@@ -30,7 +26,7 @@
     <color name="font_green_color">#1dd51d</color>
     <color name="title_black">#000000</color>
     <color name="contact_font_color">#908a8c</color>
-    <color name="gray_white">#ffcccccc</color>
+    <color name="gray_white">#ffcccc</color>
 
     <color name="line_color">#c3c3c3</color>
 
@@ -43,7 +39,7 @@
     <color name="cp_color_grid_item_bg">#f5f5f5</color>
 
         <color name="blue">#ff33b5e5</color>
-        <color name="fab_background_color">@color/colorAccent</color>
+        <color name="fab_background_color">#FF4081</color>
         <color name="dialog_background_color">#fafafa</color>
         <color name="right_draw_color">#fefefe</color>
         <color name="blueText">#6699ff</color> <!--文字蓝色-->
@@ -57,13 +53,13 @@
         <color name="gold">#FFD700</color>
         <color name="yellow">#FFFF00</color>
         <color name="green">#008000</color>
-        <color name="green1">#009789</color>
+        <color name="greenl">#009789</color>
         <color name="purple">#800080</color>
         <color name="pink">#FFC0CB</color>
         <color name="orange">#FFA500</color>
-        <color name="light_blue">#0083FF</color>
+        <color name="light_blue">#0083ff</color>
         <color name="transparent">#00000000</color>
-        <color name="lightest_gray">#0a000000</color>
+        <color name="lightest_gray">#0a00000</color>
 
         <!-- 特定部位颜色值 -->
         <!--登陆模块-->

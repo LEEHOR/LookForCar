@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cyht_backgroud_color"
+    android:orientation="vertical">
+
+    <com.cyht.wykc.widget.MyTittleBar.NormalTittleBar
+        android:id="@+id/tb_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow_shape"
+        app:layout_inflate="@layout/normal_leftback_tittle_bar" />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb_tittle"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/about_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:text="@string/app_name"
+            android:textColor="@color/contact_font_color"
+            android:textSize="@dimen/cyht_content_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/contact_tip"
+            android:textColor="@color/contact_font_color"
+            android:textSize="@dimen/cyht_content_size" />
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_text1"
+            android:textColor="@color/contact_font_color"
+            android:textSize="@dimen/cyht_medium_text_size" />
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_text2"
+            android:textColor="@color/contact_font_color"
+            android:textSize="@dimen/cyht_medium_text_size" />
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_text3"
+            android:textColor="@color/contact_font_color"
+            android:textSize="@dimen/cyht_medium_text_size" />
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_text4"
+            android:textColor="@color/contact_font_color"
+            android:textSize="@dimen/cyht_medium_text_size" />
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_text5"
+            android:textColor="@color/contact_font_color"
+            android:textSize="@dimen/cyht_medium_text_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_server"
+                android:textColor="@color/contact_font_color"
+                android:textSize="@dimen/cyht_medium_text_size" />
+
+            <TextView
+                android:textIsSelectable="true"
+                android:id="@+id/contact_tv_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/little_spacing"
+                android:text="@string/contact_tel"
+                android:textColor="@color/cyht_title_text_color"
+                android:textSize="@dimen/cyht_medium_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/little_spacing">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_custom"
+                android:textColor="@color/contact_font_color"
+                android:textSize="@dimen/cyht_medium_text_size" />
+
+            <TextView
+                android:textIsSelectable="true"
+                android:id="@+id/contact_tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/little_spacing"
+                android:text="@string/contact_email"
+                android:textColor="@color/cyht_title_text_color"
+                android:textSize="@dimen/cyht_medium_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/cyht_vertical_spacing"
+        android:src="@mipmap/about_type" />
+
+</RelativeLayout>

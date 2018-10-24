@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cyht_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cyht_backgroud_color"
+        android:orientation="vertical">
+
+
+        <com.cyht.wykc.widget.MyTittleBar.NormalTittleBar
+            android:id="@+id/tb_tittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shadow_shape"
+            app:layout_inflate="@layout/normal_leftback_tittle_bar" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_collection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/cyht_line_color"
+                android:dividerHeight="@dimen/cyht_line_size" />
+
+            <include layout="@layout/layout_nocollection"
+                android:id="@+id/layout_nocollection"
+                android:visibility="gone"/>
+            <com.cyht.wykc.widget.UnConnectView
+                android:id="@+id/loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/collect_layout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cyht_titlebar_height"
+            android:background="@color/cyht_white_item_color"
+            android:paddingLeft="@dimen/cyht_horizontal_spacing"
+            android:paddingRight="@dimen/cyht_horizontal_spacing"
+            android:visibility="gone">
+
+            <include layout="@layout/line_horizontal" />
+
+            <Button
+                android:id="@+id/collecti_btn_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="@string/collection_select"
+                android:textColor="@color/font_blue_color"
+                android:textSize="@dimen/cyht_button_text_size" />
+
+            <Button
+                android:id="@+id/collecti_btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="@string/collection_delete"
+                android:textColor="@color/font_gray_color"
+                android:textSize="@dimen/cyht_button_text_size" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

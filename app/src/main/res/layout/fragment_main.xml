@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_fff_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cyht.wykc.widget.MySwipeRefreshLayout
+        android:id="@+id/main_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/sliding_pane_layout_main_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.cyht.wykc.widget.MyTittleBar.SearchTittleBar
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:background="@color/material_white"
+                app:inflate="@layout/search_main" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </com.cyht.wykc.widget.MySwipeRefreshLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="66dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="center"
+        android:src="@mipmap/goback" />
+</android.support.design.widget.CoordinatorLayout>

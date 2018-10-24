@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <com.cyht.wykc.widget.MyTittleBar.NormalTittleBar
+        android:id="@+id/tb_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow_shape"
+        app:layout_inflate="@layout/normal_leftback_tittle_bar" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_headpic"
+        android:background="@drawable/bg_fff_background"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/cyht_content_color"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/edge_margin"
+            android:text="@string/head_pic" />
+
+        <com.cyht.wykc.widget.CircleImageView
+            android:id="@+id/iv_head_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/edge_margin" />
+
+    </RelativeLayout>
+
+    <View style="@style/line_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_fff_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:padding="@dimen/edge_margin"
+            android:text="@string/name_title"
+            android:textColor="@color/cyht_content_color" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/appset_head_height"
+            android:background="@drawable/bg_fff_background"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/edge_margin"
+            android:textColor="@color/cyht_content_color"
+            android:textSize="@dimen/cyht_content_size"
+            android:maxEms="12"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/edge_margin" />
+    </RelativeLayout>
+
+    <View style="@style/line_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_fff_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:padding="@dimen/edge_margin"
+            android:text="@string/about_us"
+            android:textColor="@color/cyht_content_color" />
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/appset_head_height"
+            android:background="@drawable/bg_fff_background"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/edge_margin"
+            android:textColor="@color/cyht_content_color"
+            android:textSize="@dimen/cyht_content_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/edge_margin" />
+    </RelativeLayout>
+    <View style="@style/line_style" />
+
+    <RelativeLayout
+        android:id="@+id/rl_clearcache"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_fff_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:padding="@dimen/edge_margin"
+            android:text="@string/clear_cache"
+            android:textColor="@color/cyht_content_color" />
+
+        <TextView
+            android:id="@+id/tv_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/appset_head_height"
+            android:background="@drawable/bg_fff_background"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/edge_margin"
+            android:textColor="@color/cyht_content_color"
+            android:textSize="@dimen/cyht_content_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/edge_margin" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_loginout"
+        android:text="退出登录"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_fff_background"
+        android:textColor="#fe0000"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appset_head_height" />
+
+</LinearLayout>

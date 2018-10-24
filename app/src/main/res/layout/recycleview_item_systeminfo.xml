@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_fff_background"
+    android:layout_height="@dimen/letters_item_height">
+
+    <TextView
+        android:id="@+id/tv_isread"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_letters_text"
+        android:layout_marginLeft="@dimen/edge_margin"
+        android:layout_width="10dp"
+        android:layout_height="10dp" />
+    <ImageView
+        android:id="@+id/iv_system"
+        android:src="@mipmap/system_letters"
+        android:layout_toRightOf="@+id/tv_isread"
+        android:layout_marginLeft="@dimen/edge_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv_system_remind"
+        android:text="系统提醒"
+        android:textColor="#333"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/iv_system"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_system_time"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_system_remind"
+        android:layout_marginRight="15dp"
+        android:textColor="#666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_system_text"
+        android:layout_alignLeft="@+id/tv_system_remind"
+        android:layout_below="@+id/tv_system_remind"
+        android:layout_marginTop="5dp"
+        android:textSize="13dp"
+        android:textColor="#666"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View style="@style/line_style"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/login_btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/pop_close_selector"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/popup_pic"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cyht_vertical_margin"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/cyht_prompt_text_color"
+            android:text="@string/login_pop_title"
+            android:textSize="@dimen/cyht_content_size"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/cyht_vertical_margin"
+            android:layout_marginBottom="@dimen/cyht_vertical_margin"
+            android:paddingLeft="@dimen/cyht_horizontal_spacing"
+            android:paddingRight="@dimen/cyht_horizontal_spacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/login_btn_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/share01"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/small_spacing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/cyht_content_size"
+                    android:textColor="@color/cyht_content_color"
+                    android:text="@string/login_wx"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/login_btn_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/share03"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/small_spacing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/cyht_content_size"
+                    android:textColor="@color/cyht_content_color"
+                    android:text="@string/login_qq"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/login_btn_wb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/share05" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/small_spacing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/cyht_content_size"
+                    android:textColor="@color/cyht_content_color"
+                    android:text="@string/login_wb"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

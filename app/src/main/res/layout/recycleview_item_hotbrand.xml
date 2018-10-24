@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!--<com.cyht.wykc.widget.CircleImageView-->
+        <!--android:id="@+id/iv_brand"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_width="43dp"-->
+        <!--android:layout_height="43dp"-->
+        <!--android:scaleType="centerCrop" />-->
+    <ImageView
+        android:id="@+id/iv_brand"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tv_brand"
+        android:layout_gravity="center_horizontal"
+        android:textSize="10dp"
+        android:textColor="#3d464d"
+        android:maxEms="8"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

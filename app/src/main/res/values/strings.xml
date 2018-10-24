@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">我要看车</string>
+
+    //首页
+    <string name="mainf">首页</string>
+    <string name="carbrandf">车型</string>
+    <string name="settingf">我的</string>
+
+    <string name="hot_brand">新车上市</string>
+    <string name="more_brand">更多车型</string>
+
+    <string name="download_apk">正在下载我要看车安装包</string>
+    <!--<string name="unconnect">您的网络不太给力,请检查网络连接</string>-->
+    <string name="unconnect">网络不太给力呀,点击屏幕去设置</string>
+    <string name="refresh">网络不太给力呀,请刷新</string>
+    <string name="unconnect_tip">如需要连接到互联网可以参照以下方法：</string>
+    <string name="unconnect_text">1.在设备的“设置”-“Wi-Fi网络”设置面板中选择一个可用的Wi-Fi热点介入。\n 2.在设备的“设置”-“通用”-“网络”设置面板中启用蜂窝数据（启用后运营商可能会收取数据通信费用）。</string>
+    <string name="cyht_exit">再按一次退出程序</string>
+
+    <string name="set_dialog_message">确定要退出登录吗</string>
+    <!--menu-->
+    <string name="collection">我的收藏</string>
+    <string name="history">观看历史</string>
+    <string name="contact">联系我们</string>
+    <string name="set">设置</string>
+    <string name="download">下载地址</string>
+    <string name="download_message">扫描二维码即可下载“我要看车”</string>
+
+
+    <!--视频类型-->
+    <string name="manufacturing_Technology">制造工艺</string>
+    <string name="static_analysis">静态解析</string>
+    <string name="ynamic_appreciation">动态欣赏</string>
+    <string name="operation_description">操作说明</string>
+    <string name="customer_comment">顾客评说</string>
+
+    <string name="no_video">暂无视频，欢迎提供</string>
+
+
+    <!--关于-->
+    <string name="about_us">关于我们</string>
+    <string name="about">\t\t“我要看车”是一款可以随时看车的应用，我们提供各种品牌车型的视频，海量高清汽车视频，车里车外一目了然，是您选购汽车的最佳参考指南。</string>
+
+    <!--登录-->
+    <string name="login_pop_title">您还未登录，请先登录</string>
+    <string name="login">登录</string>
+    <string name="login_wx">微信</string>
+    <string name="login_qq">QQ</string>
+    <string name="login_wb">微博</string>
+    <string name="login_toast_success">登录成功</string>
+    <string name="login_toast_failure">登录失败,请重新登录</string>
+    <string name="login_hinit_text">未注册的手机号验证后自动创建账号</string>
+    <string name="verification_input">获取验证码</string>
+
+
+    <string name="contact_title">联系我们</string>
+    <string name="contact_tip">如您有以下问题，请联系我们：</string>
+    <string name="contact_text1">1.汽车专业视频更新及上传</string>
+    <string name="contact_text2">2.合作拍摄汽车专业视频</string>
+    <string name="contact_text3">3.所有视频终生免费维护</string>
+    <string name="contact_text4">4.对视频版权存在异议</string>
+    <string name="contact_text5">5.有奖纠错，可截图带文字说明</string>
+    <string name="contact_server">服务热线：</string>
+    <string name="contact_tel">400&#8211;6632500</string>
+    <string name="contact_custom">客服邮箱：</string>
+    <string name="contact_email">zhouwei@coahr.net</string>
+
+    <!--昵称-->
+    <string name="name_title">昵称</string>
+    <string name="name_hint">请输入昵称</string>
+    <string name="name_toast_update_success">修改昵称成功</string>
+    <string name="name_toast_update_failure">修改昵称失败</string>
+
+    <!--第三方登录-->
+    <string name="tripartite_title">第三方登录</string>
+    <string name="tripartite_toast_bind_success">绑定成功</string>
+    <string name="tripartite_toast_bind_failure">绑定失败</string>
+    <string name="tripartite_toast_unbind_success">解绑成功</string>
+    <string name="tripartite_toast_unbind_failure">解绑失败</string>
+    <string name="tripartite_toast_unbind_prompt">请绑定其它账号后再进行解绑</string>
+
+    <!--选择车型-->
+    <string name="select_car_title">选择您喜欢的车型</string>
+    <!--历史-->
+    <!--收藏-->
+    <string name="cyht_button_submit">提交</string>
+    <!--<string name="cyht_button_register">注册</string>-->
+    <string name="cyht_button_confirm">确定</string>
+    <string name="cyht_button_save">保存</string>
+    <string name="cyht_button_cancel">取消</string>
+    <string name="collection_edit">编辑</string>
+    <string name="collection_cancle">取消</string>
+    <string name="collection_select">全选</string>
+    <string name="collection_delete">删除</string>
+    <string name="collection_unselect">取消全选</string>
+    <string name="collection_delete_toast">请选择要取消收藏的视频</string>
+    <string name="collection_empty">您还没有收藏过视频哦</string>
+    <string name="collection_toast_delete_success">删除成功</string>
+    <string name="collection_toast_delete_failure">删除失败</string>
+    <string name="collection_dialog_message">确定要删除选中的收藏吗</string>
+    <string name="history_dialog_message">确定要删除选中的观看历史吗</string>
+
+
+
+    <!--网络提示框-->
+    <string name="dialog_connect_title">提示</string>
+    <string name="dialog_connect_content">当前非Wi-Fi网络,\n继续观看会产生流量消耗</string>
+    <!--<string name="dialog_connect_cancel">停止播放</string>-->
+    <!--<string name="dialzog_connect_ok">继续观看</string>-->
+    <string name="dialog_connect_ok">我知道了</string>
+    <string name="dialog_net_error">连接失败,请检查您的网络设置</string>
+
+
+    <!--分享-->
+    <string name="share_dialog_title">分享</string>
+    <string name="share_dialog_cycle">朋友圈</string>
+    <string name="share_dialog_space">QQ空间</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="refresh_cancel">刷新取消</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <!--意见反馈-->
+    <string name="yijianfankui_title">意见反馈</string>
+    <string name="yijianfankui_hint_content">请输入您遇到的问题或意见，我们收到后会及时跟进。您的反馈能让我们做得更好！</string>
+    <string name="toast_yijianfankui_success">意见反馈成功</string>
+    <string name="toast_yijianfankui_failure">意见反馈失败</string>
+    <string name="xitongtongzhi_title">消息</string>
+
+
+    <!--设置-->
+    <string name="head_pic">头像</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="appset_toast_clear_cache_success">清除缓存成功！</string>
+
+
+    <!--城市选择-->
+    <string name="cp_search_hint_text">城市中文名或拼音</string>
+    <string name="cp_cancel">取消</string>
+    <string name="cp_no_result">没有找到，换个词试试~</string>
+    <string name="cp_locate_failed">定位失败</string>
+    <string name="cp_locating">正在定位…</string>
+
+
+    <string name="permission_fine_location_hint">没有此权限，无法开启这个功能，请开启权限-您的位置</string>
+    <string name="permission_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限-您的位置</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限-存储</string>
+    <string name="permission_write_external_hint">没有此权限，无法开启这个功能，请开启权限-存储</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限-电话</string>
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限-通讯录</string>
+    <string name="permission_write_setting_hint">没有此权限，无法开启这个功能，请开启权限</string>
+
+</resources>

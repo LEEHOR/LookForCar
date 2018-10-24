@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/rl_select_car"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cyht_item_height"
+    android:background="@drawable/cyht_item_selector">
+
+
+    <TextView
+        android:id="@+id/select_car_name"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/cyht_horizontal_spacing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/cyht_content_size"
+        android:textColor="@color/cyht_content_color"/>
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/medium_spacing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/more"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cyht_line_size"
+        android:background="@color/cyht_line_color"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

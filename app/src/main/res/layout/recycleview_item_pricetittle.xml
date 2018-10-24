@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_price_tittle"
+    android:layout_width="match_parent"
+    android:textColor="#2fc1ff"
+    android:gravity="center_vertical"
+    android:textSize="15dp"
+    android:layout_marginLeft="12.5dp"
+    android:layout_height="30dp" />

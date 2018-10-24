@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ClipViewLayout">
+        <attr name="clipType" format="enum">
+            <enum name="circle" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="mHorizontalPadding" format="dimension" />
+        <attr name="clipBorderWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="SearchTittleBar">
+        <attr name="inflate" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="NormalTittleBar">
+        <attr name="layout_inflate" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyBottomNavigation">
+        <attr name="layout_inflate0" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleTextProgressbar">
+        <attr name="in_circle_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PageStateLayout">
+        <attr name="loadingView" format="reference" />
+        <attr name="errorView" format="reference" />
+        <attr name="netErrorView" format="reference" />
+        <attr name="emptyView" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+        <attr name="loading_renderer">
+            <!--circle rotate-->
+            <enum name="MaterialLoadingRenderer" value="0" />
+            <enum name="LevelLoadingRenderer" value="1" />
+            <enum name="WhorlLoadingRenderer" value="2" />
+            <enum name="GearLoadingRenderer" value="3" />
+            <!--circle jump-->
+            <enum name="SwapLoadingRenderer" value="4" />
+            <enum name="GuardLoadingRenderer" value="5" />
+            <enum name="DanceLoadingRenderer" value="6" />
+            <enum name="CollisionLoadingRenderer" value="7" />
+            <!--Scenery-->
+            <enum name="DayNightLoadingRenderer" value="8" />
+            <enum name="ElectricFanLoadingRenderer" value="9" />
+            <!--Animal-->
+            <enum name="FishLoadingRenderer" value="10" />
+            <enum name="GhostsEyeLoadingRenderer" value="11" />
+            <!--Goods-->
+            <enum name="BalloonLoadingRenderer" value="12" />
+            <enum name="WaterBottleLoadingRenderer" value="13" />
+            <!--ShapeChange-->
+            <enum name="CircleBroodLoadingRenderer" value="14" />
+            <enum name="CoolWaitLoadingRenderer" value="15" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SlantedTextView">
+        <attr name="slantedTextSize" format="dimension" />
+        <attr name="slantedBackgroundColor" format="color" />
+        <attr name="slantedText" format="string" />
+        <attr name="slantedTextColor" format="color" />
+        <attr name="slantedLength" format="dimension" />
+        <attr name="slantedMode" format="enum">
+            <enum name="left" value="0"></enum>
+            <enum name="right" value="1"></enum>
+            <enum name="left_bottom" value="2"></enum>
+            <enum name="right_bottom" value="3"></enum>
+            <enum name="left_triangle" value="4"></enum>
+            <enum name="right_triangle" value="5"></enum>
+            <enum name="left_bottom_triangle" value="6"></enum>
+            <enum name="right_bottom_triangle" value="7"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!--process button-->
+    <declare-styleable name="ProcessButton">
+        <attr name="pb_textProgress" format="string" />
+        <attr name="pb_textComplete" format="string" />
+        <attr name="pb_textError" format="string" />
+        <attr name="pb_colorProgress" format="color" />
+        <attr name="pb_colorComplete" format="color" />
+        <attr name="pb_colorError" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FlatButton">
+        <attr name="pb_colorPressed" format="color" />
+        <attr name="pb_colorNormal" format="color" />
+        <attr name="pb_cornerRadius" format="dimension" />
+    </declare-styleable>
+
+
+
+    <attr name="cpCancelTextSize" format="dimension|reference" />
+    <attr name="cpCancelTextColor" format="color|reference" />
+
+    <attr name="cpClearTextIcon" format="reference" />
+    <attr name="cpSearchTextSize" format="dimension|reference" />
+    <attr name="cpSearchTextColor" format="color|reference" />
+    <attr name="cpSearchHintText" format="string|reference" />
+    <attr name="cpSearchHintTextColor" format="color|reference" />
+    <attr name="cpSearchCursorDrawable" format="reference" />
+
+    <attr name="cpListItemTextSize" format="dimension|reference" />
+    <attr name="cpListItemTextColor" format="color|reference" />
+    <attr name="cpListItemHeight" format="dimension|reference"/>
+
+    <attr name="cpEmptyIcon" format="reference"/>
+    <attr name="cpEmptyIconWidth" format="dimension|reference"/>
+    <attr name="cpEmptyIconHeight" format="dimension|reference"/>
+    <attr name="cpEmptyText" format="string|reference"/>
+    <attr name="cpEmptyTextSize" format="dimension|reference"/>
+    <attr name="cpEmptyTextColor" format="color|reference"/>
+
+    <attr name="cpGridItemBackground" format="color|reference"/>
+    <attr name="cpGridItemSpace" format="reference"/>
+
+    <attr name="cpSectionHeight" format="reference"/>
+    <attr name="cpSectionTextSize" format="reference" />
+    <attr name="cpSectionTextColor" format="reference" />
+    <attr name="cpSectionBackground" format="reference" />
+
+    <attr name="cpIndexBarTextSize" format="reference" />
+    <attr name="cpIndexBarNormalTextColor" format="reference" />
+    <attr name="cpIndexBarSelectedTextColor" format="reference" />
+
+    <attr name="cpOverlayWidth" format="dimension|reference"/>
+    <attr name="cpOverlayHeight" format="dimension|reference"/>
+    <attr name="cpOverlayTextSize" format="dimension|reference"/>
+    <attr name="cpOverlayTextColor" format="color|reference"/>
+    <attr name="cpOverlayBackground" format="color|reference"/>
+</resources>

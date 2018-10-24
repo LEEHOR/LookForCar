@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cyht_backgroud_color"
+    android:orientation="vertical">
+
+    <com.cyht.wykc.widget.MyTittleBar.NormalTittleBar
+        android:id="@+id/tb_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow_shape"
+        app:layout_inflate="@layout/normal_leftback_tittle_bar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/kanche" />
+
+    <TextView
+        android:text="我要看车"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/material_black"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="当前版本V2.1.2"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/material_grey_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:text="@string/about"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/material_grey_600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

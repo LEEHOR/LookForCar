@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/cyhtimages_d_button011" android:state_pressed="true" android:state_enabled="true"/>
+    <item android:drawable="@mipmap/cyhtimages_d_button01" android:state_pressed="false" android:state_enabled="true"/>
+</selector>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyht.wykc.widget.MyDrawLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:background="@drawable/bg_fff_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/passengercar_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.cyht.wykc.widget.SortRecyclerView.TouchableRecyclerView
+                android:id="@+id/rv_carbrnad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <com.cyht.wykc.widget.SortRecyclerView.SideBar
+            android:id="@+id/brand_sidebar"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="3dp"
+            android:background="@android:color/transparent" />
+
+        <com.cyht.wykc.widget.UnConnectView
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/right_drawer"
+        android:background="#fefefe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:clickable="true">
+
+        <include layout="@layout/select_car" />
+
+    </FrameLayout>
+
+</com.cyht.wykc.widget.MyDrawLayout>

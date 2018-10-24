@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_Opinion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyht_backgroud_color"
+    android:orientation="vertical">
+
+    <com.cyht.wykc.widget.MyTittleBar.NormalTittleBar
+        android:id="@+id/tb_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow_shape"
+        app:layout_inflate="@layout/normal_leftback_tittle_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cyht_vertical_spacing" />
+
+    <include layout="@layout/line_horizontal" />
+
+    <com.cyht.wykc.widget.AnFQNumEditText
+        android:id="@+id/yijianfankui_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_fff_background" />
+
+    <Button
+        android:id="@+id/yijianfankui_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cyht_button_height"
+        android:layout_marginLeft="@dimen/cyht_horizontal_spacing"
+        android:layout_marginRight="@dimen/cyht_horizontal_spacing"
+        android:layout_marginTop="@dimen/cyht_horizontal_margin"
+        android:background="@color/material_grey_500"
+        android:clickable="false"
+        android:text="@string/cyht_button_submit"
+        android:textColor="@color/cyht_button_text_color"
+        android:textSize="@dimen/cyht_button_text_size" />
+</LinearLayout>

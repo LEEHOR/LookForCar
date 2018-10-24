@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyht.wykc">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- 分享所需要的权限 -->
+    <uses-permission android:name="android.permission.ACCOUNT_MANAGER" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".mvp.view.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ico"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ico"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".mvp.view.LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mvp.view.MainActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".mvp.view.carselect.VideoListActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:theme="@style/DefaultCityPickerTheme"
+            android:name=".mvp.view.distributor.DistributorActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".mvp.view.distributor.StationMapLocationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".mvp.view.videoplay.TBSWebView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".mvp.view.distributor.DistributorVideoActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".mvp.view.setting.SettingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".mvp.view.CarSearchActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".mvp.view.setting.ClipImageActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".mvp.view.setting.NameActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".mvp.view.setting.AboutActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".mvp.view.setting.LetterDetailsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".mvp.view.ExtensionActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".mvp.view.LoginActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".mvp.view.TweetActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.view.TweetActivity1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.view.TweetActivity2"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="com.cyht.wykc.common.GlideConfiguration"
+            android:value="GlideModule" />
+
+        <meta-data
+            android:name="com.cyht.wykc.common.GlideCache"
+            android:value="GlideModule" />
+
+        <!--百度配置-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Y4S1jyA2gOzfHPfLGVB7mLAMblem0Okq" />
+
+        <!--友盟配置-->
+
+        <!--友盟-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105786581" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+
+        <!-- 使用完全自定义消息来开启应用的服务进程的示例服务配置 -->
+        <!-- 不是必需的服务，可以根据开发者的需求进行设置 -->
+        <service android:name=".umeng.RecieveUmengPushService" />
+        <!--<service android:name=".umeng.MyNotificationService" />-->
+        <!--<service android:name=".umeng.MyPushIntentService" />-->
+        <!--<service android:name=".umeng.UmengNotificationService" />-->
+        <!--<service android:name=".umeng.MyNotificationService" />-->
+        <!--<receiver android:name=".umeng.NotificationBroadcast" />-->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59b0ecd4f43e48131e00096b" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="8593f689225be89c20706815a90c3554" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <receiver android:name=".receive.DownloadReceive">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <!--<action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />-->
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

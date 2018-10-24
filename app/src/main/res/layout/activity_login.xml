@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <com.cyht.wykc.widget.MyTittleBar.NormalTittleBar
+        android:id="@+id/tb_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow_shape"
+        app:layout_inflate="@layout/normal_leftback_tittle_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_fff_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:padding="@dimen/edge_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_86"
+                android:text="+86"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/v_line"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_86"
+                android:layout_marginLeft="20dp"
+                android:background="#f2f2f2"
+                android:layout_width="1px"
+                android:layout_height="25dp"/>
+            
+            <com.cyht.wykc.widget.MobilePhoneEditText
+                android:id="@+id/et_mobilephone"
+                android:background="@null"
+                android:hint="请输入手机号码"
+                android:textColorHint="#e6e6e6"
+                android:textColor="#333333"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/v_line"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"
+                android:maxLength="13"
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <com.cyht.wykc.widget.BlockTextView
+                android:id="@+id/btv_verification"
+                android:text="@string/verification_input"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="90dp"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+        <View
+            android:background="#f2f2f2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <LinearLayout
+            android:padding="@dimen/edge_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="验证码"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_verification_code"
+                android:layout_marginLeft="20dp"
+                android:hint="请输入验证码"
+                android:textSize="15sp"
+                android:maxLength="6"
+                android:background="@null"
+                android:inputType="number"
+                android:textColorHint="#e6e6e6"
+                android:textColor="#333333"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_margin="10dp"
+        android:textColor="#f2f2f2"
+        android:textSize="13sp"
+        android:text="@string/login_hinit_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#969798"
+        android:text="@string/login"
+        android:textSize="18sp"
+        android:textColor="@color/material_white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <TextView
+        android:layout_marginTop="135dp"
+        android:text="其他登录方式"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/login_btn_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/login_weixin"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/small_spacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/cyht_content_size"
+                android:textColor="@color/cyht_content_color"
+                android:text="@string/login_wx"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/login_btn_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/login_qq"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/small_spacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/cyht_content_size"
+                android:textColor="@color/cyht_content_color"
+                android:text="@string/login_qq"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/login_btn_wb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/login_weibo" />
+
+            <TextView
+                android:layout_marginTop="@dimen/small_spacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/cyht_content_size"
+                android:textColor="@color/cyht_content_color"
+                android:text="@string/login_wb"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_fff_background">
+
+
+        <ImageView
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/loading_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/nowifi"
+            />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unconnect"
+            android:textSize="@dimen/cyht_content_size"
+            android:textColor="@color/cyht_content_color"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/cyht_vertical_spacing"
+        android:paddingRight="@dimen/cyht_horizontal_margin"
+        android:paddingLeft="@dimen/cyht_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unconnect_tip"
+        android:textSize="@dimen/cyht_medium_text_size"
+        android:textColor="@color/cyht_content_color"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/small_spacing"
+        android:paddingRight="@dimen/cyht_horizontal_margin"
+        android:paddingLeft="@dimen/cyht_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unconnect_text"
+        android:textSize="@dimen/cyht_medium_text_size"
+        android:textColor="@color/cyht_content_color"/>
+        <!--<Button
+            android:id="@+id/loadint_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cyht_button_height"
+            android:paddingLeft="@dimen/cyht_horizontal_spacing"
+            android:paddingRight="@dimen/cyht_horizontal_spacing"
+            android:layout_marginTop="@dimen/cyht_vertical_margin"
+            android:textSize="@dimen/cyht_button_text_size"
+            android:textColor="@color/cyht_button_text_color"
+            android:text="@string/reload"
+            android:background="@drawable/button_green_selector"/>-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/code_btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/pop_close_selector"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_fff_background"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/code_iv_img"
+            android:layout_margin="@dimen/cyht_horizontal_spacing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@mipmap/erweima_ex"
+            android:scaleType="fitCenter"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="@dimen/cyht_line_size"
+            android:background="@color/cyht_content_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/cyht_vertical_spacing"
+            android:paddingBottom="@dimen/cyht_vertical_spacing"
+            android:textSize="@dimen/cyht_content_size"
+            android:textColor="@color/cyht_content_color"
+            android:text="@string/download_message"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cyht_webview_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyht_backgroud_color"
+    android:orientation="vertical">
+
+    <!--<com.cyht.wykc.widget.MyTittleBar.NormalTittleBar-->
+    <!--android:id="@+id/tb_tittle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/bg_shadow_shape"-->
+    <!--app:layout_inflate="@layout/normal_leftback_tittle_bar" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/cyht_line_size"-->
+    <!--android:background="@color/cyht_backgroud_color"/>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/tbs_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.cyht.wykc.widget.x5web.X5WebView
+                    android:id="@+id/tbs_webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" />
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/transparent"
+                    android:src="@mipmap/back" />
+            </FrameLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <com.cyht.wykc.widget.UnConnectView
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

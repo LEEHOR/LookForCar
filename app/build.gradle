@@ -1,23 +1,29 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.jakewharton.butterknife'
 
-//def config = rootProject.ext.configs;    //在根目录build.gradle中配置
-//def lib = rootProject.ext.libs;
+def config = rootProject.ext.configs;    //在根目录build.gradle中配置
+def lib = rootProject.ext.libs;
 android {
-    compileSdkVersion 27
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+
     defaultConfig {
         applicationId "com.cyht.wykc"
         minSdkVersion 16
-        targetSdkVersion 27
+        targetSdkVersion config.targetSdkVersion
         versionCode 225
         versionName "2.2.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
 
-        ndk {
-            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        ndk{
+            abiFilters "armeabi","armeabi-v7a","x86"
         }
     }
+
+
+
     dexOptions {
         jumboMode true
     }
@@ -51,56 +57,70 @@ android {
             keyPassword "cyht123"
         }
     }
+
     allprojects {
         repositories {
+           // maven { url 'https://maven.google.com' }
+            // maven { url 'https://tokbox.bintray.com/maven' }
+            //  maven { url "https://jitpack.io" }
+            jcenter() //在上面
+            google()
+            maven {
+                url "https://maven.google.com"
+            }
             maven { url "https://jitpack.io" }
+
         }
     }
+
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs']
         }
     }
-    buildToolsVersion '27.0.3'
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    implementation 'com.android.support:appcompat-v7:27.0.2'
     // compile "com.android.support:design:${lib.supportVersion}"
     implementation 'com.afollestad.material-dialogs:core:0.8.6.1'
     //基于扁平化的设计，有可能用不上
+    implementation 'com.android.support:design:27.0.2'
     //基于扁平化的设计，有可能用不上
+    implementation 'com.android.support:cardview-v7:27.0.2'
     implementation project(':PushSDK')
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
     implementation 'com.github.zhaokaiqiang.klog:library:1.5.0'
     implementation 'me.imid.swipebacklayout.lib:library:1.0.0'
     //筛选器
-    implementation 'com.github.dongjunkun:DropDownMenu:1.0.4'
+    implementation 'com.github.dongjunkun:DropDownMenu:1.0.3'
     //Rx系列
     implementation 'io.reactivex:rxandroid:1.2.1'
     implementation 'io.reactivex:rxjava:1.1.6'
     //retrofit2系列
-    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
-    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.0-RC1'
+    implementation 'com.google.code.gson:gson:2.6.2'
     //第三方控件
     implementation 'com.github.dmytrodanylyk.circular-progress-button:library:1.1.3'
     implementation 'org.greenrobot:eventbus:3.0.0'
     //底部导航栏
     implementation 'com.aurelhubert:ahbottomnavigation:1.2.2'
     //fragment加载
-    implementation 'me.yokeyword:fragmentation:1.3.4'
-    implementation 'me.yokeyword:fragmentation-swipeback:1.3.4'
+    implementation 'me.yokeyword:fragmentation:1.1.1'
+    implementation 'me.yokeyword:fragmentation-swipeback:1.1.1'
     //图片加载
     implementation 'com.github.bumptech.glide:glide:3.7.0'
     //黄油刀系列
-    implementation 'com.jakewharton:butterknife:9.0.0-rc1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.7.8'
     //下拉刷新
     implementation 'in.srain.cube:ultra-ptr:1.0.11'
@@ -109,16 +129,10 @@ dependencies {
     implementation 'com.facebook.stetho:stetho-okhttp:1.1.0'
     implementation project(':lib')
     //方法超过极限，多打包
-    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:multidex:1.0.0'
     //沉浸式
     implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
-    implementation 'com.google.dagger:dagger:2.16'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.16'
-
-    implementation 'com.android.support:support-v4:27.1.1'
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support:design:27.1.1'
-    implementation 'junit:junit:4.12'
-    implementation 'com.android.support:cardview-v7:27.1.1'
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.google.dagger:dagger:2.0'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.0'
+    implementation 'com.android.support:support-v4:27.0.2'
 }

@@ -21,15 +21,11 @@ public class Constants extends CYHTConstants{
         throw new Error("Do not need instantiate!");
     }
 
-//    	public static final String BASE_URL = "http://192.168.191.1:8080/51kanche/";
-//    public static final String BASE_URL = "http://192.168.191.8:8081/51kanche/";
    // 国内版本
-  //  public static final String BASE_URL = "http://android.woyaokanche.com:8082/51kanche/";
+    public static final String BASE_URL = "http://android.woyaokanche.com:8082/51kanche/";
         //海外版
-    public static final String BASE_URL="http://en.ccarccar.com:8085/51kanche/";
+    //public static final String BASE_URL="http://en.ccarccar.com:8085/51kanche/";
 
-//    public static final String BASE_URL =  "http://test.woyaokanche.com:8080/51kanche/";
-//
 
     //SD卡路径
     public static final String PATH_DATA = DirectoryUtils.getDiskCacheDirectory(BaseApplication.mContext, "data").getAbsolutePath();

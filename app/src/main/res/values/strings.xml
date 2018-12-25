@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">我要看车</string>
-
-    //首页
     <string name="mainf">首页</string>
     <string name="carbrandf">车型</string>
     <string name="settingf">我的</string>

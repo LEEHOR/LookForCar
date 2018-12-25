@@ -34,14 +34,18 @@
     </com.cyht.wykc.widget.MySwipeRefreshLayout>
 
 
+    android:scaleType="fitXY"
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
         android:layout_gravity="bottom|right"
         android:layout_marginBottom="66dp"
-        android:layout_marginRight="16dp"
-        android:scaleType="center"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/material_lightBlue_A700"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:elevation="2dp"
         android:src="@mipmap/goback" />
 </android.support.design.widget.CoordinatorLayout>

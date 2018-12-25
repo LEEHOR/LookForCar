@@ -1,21 +1,17 @@
 package com.cyht.wykc.mvp.view.main;
 
 import android.accounts.NetworkErrorException;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -42,8 +38,6 @@ import com.cyht.wykc.mvp.view.adapter.MainAdapter;
 import com.cyht.wykc.mvp.view.base.BaseApplication;
 import com.cyht.wykc.mvp.view.base.BaseFragment;
 import com.cyht.wykc.mvp.view.carselect.VideoListActivity;
-import com.cyht.wykc.mvp.view.distributor.DistributorVideoActivity;
-import com.cyht.wykc.mvp.view.setting.SettingActivity;
 import com.cyht.wykc.mvp.view.videoplay.TBSWebView;
 import com.cyht.wykc.utils.BitmapUtils;
 import com.cyht.wykc.utils.PreferenceUtils;
@@ -60,7 +54,6 @@ import com.umeng.socialize.media.UMImage;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.litepal.util.Const;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -164,6 +157,7 @@ public class MainFragment extends BaseFragment<MainContract.Presenter> implement
                 }
             }
 
+            @SuppressLint("RestrictedApi")
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
@@ -193,7 +187,7 @@ public class MainFragment extends BaseFragment<MainContract.Presenter> implement
                 if (linearLayoutManager.findLastVisibleItemPosition() > 8) {
                     fab.setVisibility(View.VISIBLE);
                 } else {
-                    fab.setVisibility(View.GONE);
+                    fab.setVisibility(View.INVISIBLE);
                 }
             }
         });

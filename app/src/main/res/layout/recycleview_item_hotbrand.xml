@@ -13,12 +13,13 @@
         <!--android:scaleType="centerCrop" />-->
     <ImageView
         android:id="@+id/iv_brand"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:scaleType="fitCenter" />
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/tv_brand"
         android:layout_gravity="center_horizontal"
         android:textSize="10dp"

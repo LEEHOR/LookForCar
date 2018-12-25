@@ -32,7 +32,7 @@ public class HotBrandAdapter extends RecyclerView.Adapter<HotBrandAdapter.Viewho
     private Context context;
     private Resources resources;
     private HotBrandItemclicklistener brandItemClickListener;
-    private static int HOTBRANDSIZE = 11;
+    private static int HOTBRANDSIZE = 15;
 
     public HotBrandAdapter(Context context) {
         this.context = context;
